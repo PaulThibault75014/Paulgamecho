@@ -34,7 +34,7 @@ const fs = require('fs'); // "file system", module pour opération de lecture/d'
 const fileUpload = require("express-fileupload");
 app.use(fileUpload());
 const cors = require("cors");
-//app.use(cors());
+app.use(cors());
 app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
