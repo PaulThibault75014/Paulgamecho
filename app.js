@@ -18,13 +18,13 @@ var app = express();
 const https = require('https'); // nouveau module pour mettre en place un
 const fs = require('fs'); // "file system", module pour opération de lecture/d'écriture de fich
 
-const options = {
+/*const options = {
     key: fs.readFileSync('localhost.key'),
     cert: fs.readFileSync('localhost.crt')
   };
-  
+  */
   https.createServer(options, app).listen(3019, () => {
-    console.log('Server running on https://localhost:3019');
+    console.log('Server running on https://paulgamecho-backend1.vercel.app/');
   });
   app.get('/', (req, res) => {
     res.send('Hello HTTPS World!');
