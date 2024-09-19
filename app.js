@@ -18,6 +18,7 @@ var app = express();
 const https = require('https'); // nouveau module pour mettre en place un
 const fs = require('fs'); // "file system", module pour opération de lecture/d'écriture de fich
 
+//test
 /*const options = {
     key: fs.readFileSync('localhost.key'),
     cert: fs.readFileSync('localhost.crt')
